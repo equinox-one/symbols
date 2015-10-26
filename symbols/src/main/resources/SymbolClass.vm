@@ -1,0 +1,10 @@
+package $data.generatedPackage;
+
+
+public class $data.generatedClassName {
+	public static final String CLASS_NAME= "$data.tableName";
+
+	#foreach( $attribute in $data.attributes )
+	public static final String $attribute.staticAttributeName = "$attribute.attributeName";
+	#end
+}
