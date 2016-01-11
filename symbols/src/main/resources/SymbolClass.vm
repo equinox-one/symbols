@@ -1,10 +1,19 @@
 package $data.generatedPackage;
 
 
-public class $data.generatedClassName {
+public class $data.generatedClassName #if( $data.superClassModel )extends $data.superClassModel.generatedFullName #end implements Symbols{
 	public static final String CLASS_NAME= "$data.tableName";
 
 	#foreach( $attribute in $data.attributes )
 	public static final String $attribute.staticAttributeName = "$attribute.attributeName";
 	#end
+
+	public static final String[] ATTRIBUTES = {
+	    #foreach( $attribute in $data.attributes )
+    		$attribute.staticAttributeName #if( $velocityHasNext ), #end
+
+    	#end
+	};
+
+
 }

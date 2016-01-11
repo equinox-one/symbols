@@ -1,5 +1,8 @@
-package com.mateuyabar.symbols.processor;
+package com.mateuyabar.symbols.model;
 
+/**
+ * Case formatinc functions
+ */
 public class CaseFormat {
 
 	public String cammelCaseToSnakeCase(String cammelCase){

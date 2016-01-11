@@ -2,16 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
+    <!--parent>
         <artifactId>symbolslib</artifactId>
         <groupId>com.mateuyabar</groupId>
         <version>0.0.1</version>
-    </parent>
+    </parent-->
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mateuyabar</groupId>
     <artifactId>symbols</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.5</version>
 
     <dependencies>
         <dependency>
@@ -22,7 +22,7 @@
         <dependency>
             <groupId>com.google.auto</groupId>
             <artifactId>auto-common</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>0.5</version>
         </dependency>
         <dependency>
             <groupId>com.squareup</groupId>
@@ -34,14 +34,63 @@
             <artifactId>velocity</artifactId>
             <version>1.7</version>
         </dependency>
-
-
     </dependencies>
 
     <build>
         <plugins>
+            <plugin>
+                <artifactId>maven-shade-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <artifactSet>
+                                <excludes>
+                                    <!-- exclude dependencies you don't want to bundle in your processor -->
+                                </excludes>
+                            </artifactSet>
+                            <relocations>
+                                <relocation>
+                                    <pattern>com.google.auto.common</pattern>
+                                    <shadedPattern>your.processor.shaded.auto.common</shadedPattern>
+                                </relocation>
+                            </relocations>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
 
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+
+            <!--plugin>
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.4.1</version>
                 <configuration>
@@ -55,8 +104,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <!--source>${java.version}</source>
-                    <target>${java.version}</target-->
                     <source>1.8</source>
                     <target>1.8</target>
                     <compilerArgument>-Xlint:all</compilerArgument>
@@ -78,12 +125,21 @@
                 <configuration>
                     <skipTests>true</skipTests>
                 </configuration>
-            </plugin>
+            </plugin-->
         </plugins>
     </build>
 
+    <!--http://blog.bintray.com/2015/09/17/publishing-your-maven-project-to-bintray/-->
+    <!-- mvn deploy -->
+    <distributionManagement>
+        <repository>
+            <id>bintray-repo-maven-example</id>
+            <url>https://api.bintray.com/maven/mateuyabar/maven/symbols/;publish=1</url>
+        </repository>
+    </distributionManagement>
+
     <!-- http://veithen.github.io/2013/05/26/github-bintray-maven-release-plugin.html -->
-    <scm>
+    <!--scm>
         <connection>scm:git:https://github.com/mateuyabar/symbols.git</connection>
         <developerConnection>scm:git:git@github.com:mateuyabar/symbols.git</developerConnection>
         <url>https://github.com/mateuyabar/symbols</url>
@@ -96,7 +152,7 @@
             <url>https://api.bintray.com/maven/mateuyabar/maven/symbols</url>
         </repository>
     </distributionManagement>
-
+-->
     <profiles>
         <profile>
             <id>release</id>

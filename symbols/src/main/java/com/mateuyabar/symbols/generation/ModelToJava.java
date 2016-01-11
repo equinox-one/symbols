@@ -1,5 +1,6 @@
-package com.mateuyabar.symbols.processor;
+package com.mateuyabar.symbols.generation;
 
+import com.mateuyabar.symbols.model.ClassModel;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
@@ -12,25 +13,25 @@ import java.net.URL;
 import java.util.Properties;
 
 /**
- * Created by mateuyabar on 23/04/15.
+ * In charge of generating the new classes, given a model.
  */
-public class SymbolVelocityGenerator {
-    public static void create(ProcessingEnvironment processingEnv, String fqClassName, SymbolProcessorModel velocitydata){
+public class ModelToJava {
+    public void create(ProcessingEnvironment processingEnv, ClassModel classModel){
         try {
             Properties props = new Properties();
-            URL url = SymbolVelocityGenerator.class.getClassLoader().getResource("velocity.properties");
+            URL url = ModelToJava.class.getClassLoader().getResource("velocity.properties");
             props.load(url.openStream());
 
             VelocityEngine ve = new VelocityEngine(props);
             ve.init();
 
             VelocityContext vc = new VelocityContext();
-            vc.put("data", velocitydata);
+            vc.put("data", classModel);
 
             Template vt = ve.getTemplate("SymbolClass.vm");
 
 
-            JavaFileObject jfo = processingEnv.getFiler().createSourceFile(velocitydata.getGeneratedPackage()+"."+velocitydata.getGeneratedClassName());
+            JavaFileObject jfo = processingEnv.getFiler().createSourceFile(classModel.getGeneratedPackage()+"."+classModel.getGeneratedClassName());
 
             processingEnv.getMessager().printMessage(Diagnostic.Kind.NOTE, "creating source file: " + jfo.toUri());
             Writer writer = jfo.openWriter();
