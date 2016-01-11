@@ -1,7 +1,7 @@
 package $data.generatedPackage;
 
 
-public class $data.generatedClassName #if( $data.superClassModel )extends $data.superClassModel.generatedFullName #end implements Symbols{
+public class $data.generatedClassName #if( $data.superClassModel )extends $data.superClassModel.generatedFullName #end{
 	public static final String CLASS_NAME= "$data.tableName";
 
 	#foreach( $attribute in $data.attributes )
