@@ -4,6 +4,8 @@ Symbols is a Java library to generate static strings constants for attribute nam
 # Tell me more
 In some cases, in Java (ex: when using reflection methods) we need to refer to class attributes. To do so we usually create static strings of the names of the attributes. This is boiler-plate code and its an origin of problems (ex: when changing attributes names). FritterFactory helps to solve this problem.
 
+The original idea comes from the lack of something similar to [Factory Girl] that could be used in Android.
+
 # Show me the codes!
 Lets imagine that we have the following POJO, that we annotate with Symbolize.
 ```java
@@ -62,3 +64,4 @@ License
 
 
 [FritterFactory]: https://github.com/equinox-one/fritterfactory
+[Factory Girl]: https://github.com/thoughtbot/factory_girl
