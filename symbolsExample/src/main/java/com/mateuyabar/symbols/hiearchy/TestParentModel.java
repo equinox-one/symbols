@@ -1,7 +1,8 @@
 package com.mateuyabar.symbols.hiearchy;
 
-/**
- * Created by mateuyabar on 8/01/16.
- */
+import com.mateuyabar.symbols.Symbolize;
+
+@Symbolize
 public class TestParentModel {
+    String parentAtt;
 }

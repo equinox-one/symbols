@@ -5,13 +5,13 @@
     <parent>
         <artifactId>symbolslib</artifactId>
         <groupId>com.mateuyabar</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>0.0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mateuyabar</groupId>
     <artifactId>symbolsExample</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.0.1</version>
 
     <dependencies>
         <dependency>
@@ -36,12 +36,23 @@
         <dependency>
             <groupId>com.mateuyabar</groupId>
             <artifactId>symbols</artifactId>
-            <version>1.2-SNAPSHOT</version>
+            <version>0.0.4</version>
         </dependency>
     </dependencies>
 
     <build>
         <plugins>
+
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.4.1</version>
+                <configuration>
+                    <useReleaseProfile>false</useReleaseProfile>
+                    <releaseProfiles>release</releaseProfiles>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                </configuration>
+            </plugin>
+
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -59,4 +70,6 @@
             </plugin>
         </plugins>
     </build>
+
+
 </project>

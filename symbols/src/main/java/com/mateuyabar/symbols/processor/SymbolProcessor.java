@@ -1,8 +1,8 @@
 package com.mateuyabar.symbols.processor;
 
+import com.mateuyabar.symbols.generation.ModelToJava;
 import com.google.auto.service.AutoService;
 import com.mateuyabar.symbols.Symbolize;
-import com.mateuyabar.symbols.generation.ModelToJava;
 import com.mateuyabar.symbols.model.ClassModel;
 
 import java.util.Collections;

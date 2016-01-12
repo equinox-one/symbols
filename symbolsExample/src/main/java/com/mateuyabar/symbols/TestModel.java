@@ -1,7 +1,7 @@
 package com.mateuyabar.symbols;
 
 
-@SymbolClass
+@Symbolize
 public class TestModel {
     int attribute10;
     int anotherAttribute;

@@ -7,11 +7,18 @@
     <groupId>com.mateuyabar</groupId>
     <artifactId>symbolslib</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.0.1</version>
     <modules>
         <module>symbols</module>
         <module>symbolsExample</module>
     </modules>
+
+    <scm>
+        <connection>scm:git:https://github.com/mateuyabar/symbols.git</connection>
+        <developerConnection>scm:git:git@github.com:mateuyabar/symbols.git</developerConnection>
+        <url>https://github.com/mateuyabar/symbols</url>
+        <tag>HEAD</tag>
+    </scm>
 
     <build>
         <pluginManagement>
