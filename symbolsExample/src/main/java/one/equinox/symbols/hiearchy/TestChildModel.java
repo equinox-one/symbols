@@ -1,6 +1,7 @@
-package com.mateuyabar.symbols.hiearchy;
+package one.equinox.symbols.hiearchy;
 
-import com.mateuyabar.symbols.Symbolize;
+
+import one.equinox.symbols.Symbolize;
 
 @Symbolize
 public class TestChildModel extends TestParentModel{

@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <!--parent>
         <artifactId>symbolslib</artifactId>
-        <groupId>com.mateuyabar</groupId>
+        <groupId>com.equinox</groupId>
         <version>0.0.1</version>
     </parent-->
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.mateuyabar</groupId>
+    <groupId>one.equinox</groupId>
     <artifactId>symbols</artifactId>
-    <version>0.0.6</version>
+    <version>0.0.1</version>
 
     <dependencies>
         <dependency>
@@ -134,7 +134,7 @@
     <distributionManagement>
         <repository>
             <id>bintray-repo-maven-mateuyabar</id>
-            <url>https://api.bintray.com/maven/mateuyabar/maven/symbols/;publish=1</url>
+            <url>https://api.bintray.com/maven/equinox-one/maven/symbols/;publish=1</url>
         </repository>
     </distributionManagement>
 

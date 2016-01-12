@@ -1,4 +1,4 @@
-package com.mateuyabar.symbols;
+package one.equinox.symbols;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Target;

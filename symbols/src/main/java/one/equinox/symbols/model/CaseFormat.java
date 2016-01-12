@@ -1,4 +1,4 @@
-package com.mateuyabar.symbols.model;
+package one.equinox.symbols.model;
 
 /**
  * Case formatinc functions

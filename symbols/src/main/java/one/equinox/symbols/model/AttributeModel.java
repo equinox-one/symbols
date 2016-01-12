@@ -1,4 +1,4 @@
-package com.mateuyabar.symbols.model;
+package one.equinox.symbols.model;
 
 /**
  * Model to store attribute data

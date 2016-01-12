@@ -1,8 +1,8 @@
-package com.mateuyabar.symbols.processor;
+package one.equinox.symbols.processor;
 
 
-import com.mateuyabar.symbols.model.AttributeModel;
-import com.mateuyabar.symbols.model.ClassModel;
+import one.equinox.symbols.model.AttributeModel;
+import one.equinox.symbols.model.ClassModel;
 
 import javax.lang.model.element.Element;
 import javax.lang.model.element.ElementKind;

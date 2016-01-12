@@ -1,8 +1,8 @@
-package com.mateuyabar.symbols.hiearchy;
+package one.equinox.symbols.hiearchy;
 
 
-import com.mateuyabar.symbols.hiearchy.symbols.TestChildModelSymbols;
-import com.mateuyabar.symbols.hiearchy.symbols.TestParentModelSymbols;
+import one.equinox.symbols.hiearchy.symbols.TestChildModelSymbols;
+import one.equinox.symbols.hiearchy.symbols.TestParentModelSymbols;
 
 /**
  * Created by mateuyabar on 8/01/16.

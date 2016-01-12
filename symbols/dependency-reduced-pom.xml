@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mateuyabar</groupId>
   <artifactId>symbols</artifactId>
-  <version>0.0.6</version>
+  <version>0.0.7</version>
   <build>
     <plugins>
       <plugin>
@@ -85,7 +85,7 @@
   </profiles>
   <distributionManagement>
     <repository>
-      <id>bintray-repo-maven-example</id>
+      <id>bintray-repo-maven-mateuyabar</id>
       <url>https://api.bintray.com/maven/mateuyabar/maven/symbols/;publish=1</url>
     </repository>
   </distributionManagement>

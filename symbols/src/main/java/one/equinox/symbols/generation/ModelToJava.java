@@ -1,6 +1,6 @@
-package com.mateuyabar.symbols.generation;
+package one.equinox.symbols.generation;
 
-import com.mateuyabar.symbols.model.ClassModel;
+import one.equinox.symbols.model.ClassModel;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;

@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>symbolslib</artifactId>
-        <groupId>com.mateuyabar</groupId>
+        <groupId>one.equinox</groupId>
         <version>0.0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -34,9 +34,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.mateuyabar</groupId>
+            <groupId>one.equinox</groupId>
             <artifactId>symbols</artifactId>
-            <version>0.0.4</version>
+            <version>0.0.1</version>
         </dependency>
     </dependencies>
 

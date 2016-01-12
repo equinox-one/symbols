@@ -1,7 +1,7 @@
-package com.mateuyabar.symbols;
+package one.equinox.symbols;
 
 
-import static com.mateuyabar.symbols.symbols.TestModelSymbols.*;
+import static one.equinox.symbols.symbols.TestModelSymbols.*;
 
 
 /**
