@@ -47,7 +47,7 @@ Symbols is Android Friendly
 License
 =======
 
-     Copyright 2016 [Equinox.one]
+     Copyright 2016 Equinox.one
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -65,4 +65,3 @@ License
 
 [FritterFactory]: https://github.com/equinox-one/fritterfactory
 [Factory Girl]: https://github.com/thoughtbot/factory_girl
-[Equinox.one]: http://equinox.one
