@@ -2,7 +2,7 @@
 Symbols is a Java library to generate static strings constants for attribute names using annotation processor.
 
 # Tell me more
-In some cases, in Java (ex: when using reflection methods) we need to refer to class attributes. To do so we usually create static strings of the names of the attributes. This is boiler-plate code and its an origin of problems (ex: when changing attributes names). FritterFactory helps to solve this problem.
+In some cases, in Java (ex: when using reflection methods) we need to refer to class attributes. To do so we usually create static strings of the names of the attributes. This is boiler-plate code and its an origin of problems (ex: when changing attributes names). [Fritter Factory] helps to solve this problem.
 
 The original idea comes from the lack of something similar to [Factory Girl] that could be used in Android.
 
@@ -39,7 +39,7 @@ public class PersonSymbols {
 This library is mainly to be used by others for reflection functionallities, however it can also be used, for example to define a database for a model. Where you use it is up to you
 
 ## Where is being used
- - [FritterFactory]: Library to automatically populate models, to be used in automatic tests or user made tests.
+ - [Fritter Factory]: Library to automatically populate models, to be used in automatic tests or user made tests.
 
 # Android friendly
 Symbols is Android Friendly
@@ -63,5 +63,5 @@ License
 
 
 
-[FritterFactory]: https://github.com/equinox-one/fritterfactory
+[Fritter Factory]: https://github.com/equinox-one/fritterfactory
 [Factory Girl]: https://github.com/thoughtbot/factory_girl
