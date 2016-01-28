@@ -37,7 +37,7 @@ public class PersonSymbols {
 This library is mainly to be used by others for reflection functionallities, however it can also be used, for example to define a database for a model. Where you use it is up to you.
 
 ## Where is being used
- - [FritterFactory]: Library to automatically populate models, to be used in automatic tests or user made tests.
+ - [Fritter Factory]: Library to automatically populate models, to be used in automatic tests or user made tests.
 
 # Android friendly
 Symbols is Android Friendly
@@ -61,5 +61,4 @@ License
 
 
 
-[FritterFactory]: https://github.com/equinox-one/fritterfactory
-[Factory Girl]: https://github.com/thoughtbot/factory_girl
+[Fritter Factory]: https://github.com/equinox-one/fritterfactory
