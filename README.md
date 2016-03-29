@@ -42,6 +42,30 @@ This library is mainly to be used by others for reflection functionallities, how
 # Android friendly
 Symbols is Android Friendly
 
+# Download
+
+Grab via Gradle:
+```groovy
+repositories { jcenter() }
+
+compile 'one.equinox:symbols:+'
+```
+or via Maven:
+```xml
+<repository>
+  <id>jcenter</id>
+  <url>http://jcenter.bintray.com</url>
+</repository>
+
+<dependency>
+    <groupId>one.equinox</groupId>
+    <artifactId>symbols</artifactId>
+    <version>+</version>
+</dependency>
+```
+
+
+
 License
 =======
 
