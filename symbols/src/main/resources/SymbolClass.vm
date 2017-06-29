@@ -2,7 +2,7 @@ package $data.generatedPackage;
 
 
 public class $data.generatedClassName #if( $data.superClassModel )extends $data.superClassModel.generatedFullName #end{
-	public static final String CLASS_NAME= "$data.tableName";
+	public static final String CLASS_NAME= "$data.originModelClass";
 
 	#foreach( $attribute in $data.attributes )
 	public static final String $attribute.staticAttributeName = "$attribute.attributeName";
