@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>one.equinox</groupId>
   <artifactId>symbols</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.4</version>
   <build>
     <plugins>
       <plugin>

@@ -11,18 +11,18 @@
 
     <groupId>one.equinox</groupId>
     <artifactId>symbols</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
 
     <dependencies>
         <dependency>
             <groupId>com.google.auto.service</groupId>
             <artifactId>auto-service</artifactId>
-            <version>1.0-rc2</version>
+            <version>1.0-rc4</version>
         </dependency>
         <dependency>
             <groupId>com.google.auto</groupId>
             <artifactId>auto-common</artifactId>
-            <version>0.8</version>
+            <version>0.10</version>
         </dependency>
         <dependency>
             <groupId>com.squareup</groupId>
